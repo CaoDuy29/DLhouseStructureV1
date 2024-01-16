@@ -10,20 +10,46 @@ namespace DlhouseStructure.ViewModel
         public ICommand TinhToanDamCommand { get; set; }
         public ICommand CanelDamCommand { get; set; }
 
-        private double _ChieuRongDam;
+        private double _chieuRongDam;
         public double ChieuRongDam
         {
-            get => _ChieuRongDam;
+            get => _chieuRongDam;
             set
             {
-                _ChieuRongDam = value;
+                _chieuRongDam = value;
                 OnPropertyChanged();
             }
         }
 
+        private double _chieuCaoDam;
+        public double ChieuCaoDam
+        {
+            get => _chieuCaoDam;
+            set
+            {
+                _chieuCaoDam = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double _daiSanLd;
+        public double DaiSanLd
+        {
+            get => _daiSanLd;
+            set
+            {
+                _daiSanLd = value;
+                OnPropertyChanged();
+            }
+        }
+
+
         public void SettingData()
         {
             ChieuRongDam = 300;
+
+            ChieuCaoDam = 500;
+            DaiSanLd = 2000;
 
         }
 
@@ -39,7 +65,9 @@ namespace DlhouseStructure.ViewModel
         private void ExecuteTinhToanDamCommand()
         {
             // Implement the action to display "Hello"
-            MessageBox.Show("Đã pick vào tính toán  ");
+
+            DaiSanLd = ChieuCaoDam * 50;
+            //MessageBox.Show("Đã pick vào tính toán  ");
         }
 
     }

@@ -87,13 +87,13 @@
                         
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-                    <TextBox Text="{Binding BarCode, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding ChieuCaoDam, UpdateSourceTrigger=PropertyChanged}"
                              Margin="5 5 15 5" materialDesign:HintAssist.Hint="Cao Dầm H (mm)"
                              Width="120"
                              Background="AliceBlue"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-                    <TextBox Text="{Binding BarCode, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding DaiSanLd, UpdateSourceTrigger=PropertyChanged}"
                              Margin="5 5 15 5" materialDesign:HintAssist.Hint="Dài sàn Ld (mm)" 
                              Width="120"
                              Background="AliceBlue"
