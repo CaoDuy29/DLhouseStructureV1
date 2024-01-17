@@ -32,7 +32,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="2"/>
             <RowDefinition/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
 
         </Grid.RowDefinitions>
         <Grid>
@@ -75,7 +75,7 @@
                     <TextBlock
                          Text="Thông tin đầu vào"
                          FontSize="12"
-                         Foreground="OrangeRed"
+                         Foreground="BlueViolet"
                          FontWeight="Bold"
                          Margin="2"
                         Width="150"/>
@@ -99,25 +99,25 @@
                              Background="AliceBlue"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-                    <TextBox Text="{Binding BarCode, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding RongSanLs, UpdateSourceTrigger=PropertyChanged}"
                              Margin="5 5 15 5" materialDesign:HintAssist.Hint="Rộng sàn Ls (mm)"
                              Width="120"
                              Background="AliceBlue"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-                    <TextBox Text="{Binding BarCode, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding DaySanHs, UpdateSourceTrigger=PropertyChanged}"
                              Margin="5 5 15 5" materialDesign:HintAssist.Hint="Dày sàn Hs (mm)" 
                              Width="120"
                              Background="AliceBlue"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-                    <TextBox Text="{Binding BarCode, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding TaiTrenSanqs, UpdateSourceTrigger=PropertyChanged}"
                              Margin="5 5 15 5" materialDesign:HintAssist.Hint="Tải trên sàn qs (T/m2)" 
                              Width="120"
                              Background="AliceBlue"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
 
-                    <TextBox Text="{Binding BarCode, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding TaiTrenDamqt, UpdateSourceTrigger=PropertyChanged}"
                              Margin="5 5 15 5" materialDesign:HintAssist.Hint="Tải trên dầm qt (T/m)" 
                              Width="260"
                              Background="AliceBlue"
@@ -133,13 +133,13 @@
                     <TextBlock
                         Text="Trường hợp tính toán"
                         FontSize="12"
-                        Foreground="OrangeRed"
+                        Foreground="BlueViolet"
                         FontWeight="Bold"
                         Width="180"
                         Margin="2"/>
 
-                    <ComboBox Margin="5 5 15 5" ItemsSource="{Binding Unit}" 
-                              SelectedItem="{Binding SelectedUnit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    <ComboBox Margin="5 5 15 5" ItemsSource="{Binding TruongHopTinh}" 
+                              SelectedItem="{Binding SelectedTruongHopTinh, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                               materialDesign:HintAssist.Hint="Trường hợp tính" IsEditable="True"
                               Foreground="Blue"
                               Width="260"
@@ -147,13 +147,13 @@
                               Style="{StaticResource MaterialDesignFloatingHintComboBox}"></ComboBox>
 
                     <TextBox
-                        Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding HeSoDieuChinh, UpdateSourceTrigger=PropertyChanged}"
                         Margin="5 5 15 15" materialDesign:HintAssist.Hint="Hệ số điều chỉnh"
                         Background="AliceBlue"
                         Width="120"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                     <TextBox
-                        Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding LopBaoVea, UpdateSourceTrigger=PropertyChanged}"
                         Margin="5 5 15 15" materialDesign:HintAssist.Hint="Lớp bảo vệ a (mm)"
                         Background="AliceBlue"
                         Width="120"
@@ -168,7 +168,7 @@
                     <TextBlock
                         Text="Vật liệu"
                         FontSize="12"
-                        Foreground="OrangeRed"
+                        Foreground="BlueViolet"
                         FontWeight="Bold"
                         Width="150"
                         Margin="2"/>
@@ -210,7 +210,7 @@
                     <TextBlock
                   Text="Kết quả tính toán"
                   FontSize="12"
-                  Foreground="OrangeRed"
+                  Foreground="BlueViolet"
                   FontWeight="Bold"
                   Width="400"
                   Margin="2"/>
@@ -258,7 +258,7 @@
                     <TextBlock
                       Text="Hình ảnh minh họa"
                       FontSize="12"
-                      Foreground="OrangeRed"
+                      Foreground="BlueViolet"
                       FontWeight="Bold"
                       Width="400"
                       
@@ -278,15 +278,22 @@
 
         </Grid>
 
-        <WrapPanel Grid.Row="3">
+        <WrapPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Command="{Binding TinhToanDamCommand}"    
                     CommandParameter="{Binding ElementName=Damdongian}"
                     Grid.Column="1" 
-                    Content="Tính toán" Margin="450 5 5 5" Width="100" Height="40" 
-                    Background="Tomato"
+                    Content="Tính toán" Margin="450 5 5 5" Width="100" Height="35" 
+                    Background="BlueViolet"
                     />
-            <Button Command="{Binding EditCommand}" Content="Xuất Excel" Margin="5" Width="100" Height="40"  Background="Tomato"></Button>
-            <Button Command="{Binding DeleteCommand}" Content="Cancel" Margin="5" Width="100" Height="40" Background="SteelBlue"/>
+            <Button Command="{Binding EditCommand}" 
+                    Content="Xuất Excel" Margin="5"
+                    Width="100" Height="35"  
+                    Background="BlueViolet"/>
+            <Button Command="{Binding DeleteCommand}" 
+                    Content="Cancel" 
+                    Margin="5" Width="100"
+                    Height="35" 
+                    Background="SteelBlue"/>
         </WrapPanel>
 
     </Grid>

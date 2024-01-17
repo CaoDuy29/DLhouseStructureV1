@@ -23,7 +23,7 @@
         
         DataContext="{StaticResource MainVM}"
       
-        Title="Tính toán kết cấu DLhouse" Height="500" Width="800">
+        Title="Tính toán kết cấu DLhouse" Height="600" Width="850">
 
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
@@ -67,35 +67,15 @@
                     </Grid.ColumnDefinitions>
 
                     <Button Command="{Binding TinhdamCommand}" Grid.Column="0" ToolTip="Dầm đơn giản" 
-                            Style="{StaticResource MaterialDesignOutlinedButton}" Height="50" Margin="10 5 5 5 ">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Grid Grid.Row="0">
-                                <TextBlock Text="Dầm đơn giản" HorizontalAlignment="Center"></TextBlock>
-                            </Grid>
-                            <Grid Grid.Row="1">
-                                <materialDesign:PackIcon HorizontalAlignment="Center" Width="24" Height="24"  Kind="CheckCircleOutline" />
-                            </Grid>
-                        </Grid>
-                    </Button>
-                    <Button Command="{Binding TinhdamCommand}" Grid.Column="1" 
-        Style="{StaticResource MaterialDesignOutlinedButton}" Height="50" Margin="10 5 5 5 ">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Grid Grid.Row="0">
-                                <TextBlock Text="Cấu kiện chịu uốn" HorizontalAlignment="Center"></TextBlock>
-                            </Grid>
-                            <Grid Grid.Row="1">
-                                <materialDesign:PackIcon HorizontalAlignment="Center" Width="24" Height="24"  Kind="CheckCircleOutline" />
-                            </Grid>
-                        </Grid>
-                    </Button>
+                            Style="{StaticResource MaterialDesignOutlinedButton}" 
+                            Height="35" 
+                            Margin="5" 
+                            Content="Dầm đơn giản"/>
+                    <Button Command="{Binding TinhdamCommand}" Grid.Column="1" ToolTip="Dầm đơn giản" 
+                            Style="{StaticResource MaterialDesignOutlinedButton}" 
+                            Height="35" 
+                            Margin="5" 
+                            Content="Tính dầm chịu uốn"/>
 
                 </Grid>
             </Grid>

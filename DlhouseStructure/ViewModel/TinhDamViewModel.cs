@@ -43,13 +43,85 @@ namespace DlhouseStructure.ViewModel
             }
         }
 
+        private double _rongSanLs;
+        public double RongSanLs
+        {
+            get => _rongSanLs;
+            set
+            {
+                _rongSanLs = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double _daySanHs;
+        public double DaySanHs
+        {
+            get => _daySanHs;
+            set
+            {
+                _daySanHs = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double _taiTrenSanqs;
+        public double TaiTrenSanqs
+        {
+            get => _taiTrenSanqs;
+            set
+            {
+                _taiTrenSanqs = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double _taiTrenDamqt;
+        public double TaiTrenDamqt
+        {
+            get => _taiTrenDamqt;
+            set
+            {
+                _taiTrenDamqt = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double _heSoDieuChinh;
+        public double HeSoDieuChinh
+        {
+            get => _heSoDieuChinh;
+            set
+            {
+                _heSoDieuChinh = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double _lopBaoVea;
+        public double LopBaoVea
+        {
+            get => _lopBaoVea;
+            set
+            {
+                _lopBaoVea = value;
+                OnPropertyChanged();
+            }
+        }
+
+
 
         public void SettingData()
         {
             ChieuRongDam = 300;
-
             ChieuCaoDam = 500;
             DaiSanLd = 2000;
+            DaySanHs = 150;
+            TaiTrenSanqs = 5;
+            TaiTrenDamqt = 15;
+            LopBaoVea = 25;
+            HeSoDieuChinh = 0.9;
+
 
         }
 
