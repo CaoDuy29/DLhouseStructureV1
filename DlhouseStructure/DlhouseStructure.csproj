@@ -72,9 +72,10 @@
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tinhdam.xaml.cs">
-      <DependentUpon>Tinhdam.xaml</DependentUpon>
+    <Compile Include="DamDonGianView.xaml.cs">
+      <DependentUpon>DamDonGianView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\DamDonGianModel.cs" />
     <Compile Include="UserControlDLhouse\ControlBarUC.xaml.cs">
       <DependentUpon>ControlBarUC.xaml</DependentUpon>
     </Compile>
@@ -82,7 +83,7 @@
     <Compile Include="ViewModel\ControlBarViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
-    <Compile Include="ViewModel\TinhDamViewModel.cs" />
+    <Compile Include="ViewModel\DamDonGianViewModel.cs" />
     <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -103,9 +104,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tinhdam.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="DamDonGianView.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControlDLhouse\ControlBarUC.xaml">
       <SubType>Designer</SubType>
@@ -140,7 +141,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>

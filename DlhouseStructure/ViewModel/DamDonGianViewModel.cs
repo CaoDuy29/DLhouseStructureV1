@@ -4,7 +4,7 @@ using System.Windows.Input;
 
 namespace DlhouseStructure.ViewModel
 {
-    public class TinhDamViewModel : BaseViewModel
+    public class DamDonGianViewModel : BaseViewModel
     {
         public bool Isloaded = false;
         public ICommand TinhToanDamCommand { get; set; }
@@ -125,7 +125,7 @@ namespace DlhouseStructure.ViewModel
 
         }
 
-        public TinhDamViewModel()
+        public DamDonGianViewModel()
         {
             SettingData();
 

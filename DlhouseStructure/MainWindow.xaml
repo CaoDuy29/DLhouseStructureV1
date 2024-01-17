@@ -66,12 +66,12 @@
 
                     </Grid.ColumnDefinitions>
 
-                    <Button Command="{Binding TinhdamCommand}" Grid.Column="0" ToolTip="Dầm đơn giản" 
+                    <Button Command="{Binding TinhDamDonGianCmd}" Grid.Column="0" ToolTip="Dầm đơn giản" 
                             Style="{StaticResource MaterialDesignOutlinedButton}" 
                             Height="35" 
                             Margin="5" 
                             Content="Dầm đơn giản"/>
-                    <Button Command="{Binding TinhdamCommand}" Grid.Column="1" ToolTip="Dầm đơn giản" 
+                    <Button Command="{Binding TinhDamChiuUonCmd}" Grid.Column="1" ToolTip="Dầm đơn giản" 
                             Style="{StaticResource MaterialDesignOutlinedButton}" 
                             Height="35" 
                             Margin="5" 

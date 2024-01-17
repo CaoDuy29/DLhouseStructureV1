@@ -18,12 +18,12 @@ namespace DlhouseStructure
     /// <summary>
     /// Interaction logic for Tinhdam.xaml
     /// </summary>
-    public partial class Tinhdam : Window
+    public partial class DamDonGianView : Window
     {
-        public Tinhdam()
+        public DamDonGianView()
         {
             InitializeComponent();
-            this.DataContext = new TinhDamViewModel();
+            this.DataContext = new DamDonGianViewModel();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

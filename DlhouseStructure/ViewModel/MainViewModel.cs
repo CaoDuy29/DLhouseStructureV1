@@ -13,7 +13,9 @@ namespace DlhouseStructure.ViewModel
         public bool Isloaded = false;
         public ICommand LoadedWindowCommand { get; set; }
 
-        public ICommand TinhdamCommand { get; set; }
+        public ICommand TinhDamDonGianCmd { get; set; }
+
+        public ICommand TinhDamChiuUonCmd { get; set; }
 
         // mọi thứ xử lý sẽ nằm trong này
         public MainViewModel()
@@ -24,7 +26,7 @@ namespace DlhouseStructure.ViewModel
                 //loginWindow.ShowDialog();
             });
 
-            TinhdamCommand = new RelayCommand<object>((p) => { return true; }, (p) => { Tinhdam wd = new Tinhdam(); wd.ShowDialog(); });
+            TinhDamDonGianCmd = new RelayCommand<object>((p) => { return true; }, (p) => { DamDonGianView wd = new DamDonGianView(); wd.ShowDialog(); });
            
         }
 
