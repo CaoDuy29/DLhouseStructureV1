@@ -253,7 +253,7 @@
             </materialDesign:Card>
 
             <!--Hình ảnh minh họa-->
-            <materialDesign:Card Grid.Row ="0" Grid.Column="1" Margin="5" FontFamily="Cambria">
+            <materialDesign:Card Grid.RowSpan ="2" Grid.Column="1" Margin="5" FontFamily="Cambria">
                 <WrapPanel Margin="2" >
                     <TextBlock
                       Text="Hình ảnh minh họa"
@@ -264,8 +264,9 @@
                       
                       Margin="2"/>
                     <Image 
-                        Width="250"
-                        Height="167"
+                        Width="300"
+                        Height="200"
+                        Margin="80,60,60,60"
                         Source="ResourceIMG/Image section.png"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
